@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 - Verifica</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>HTML5</h1>
+    <h2>Verifica di Struttura, Tabelle e Form</h2>
+    <nav>
+      <ul>
+        <li><a href="#introduzione">Introduzione</a></li>
+        <li><a href="#tabelle">Tabelle</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#articolo">Articolo HTML5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="introduzione">
+    <h3>Introduzione</h3>
+    <p>Pagina di verifica HTML5.</p>
+  </section>
+
+  <section id="tabelle">
+    <h3>Catalogo Prodotti</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Prodotto</th>
+          <th>Prezzo</th>
+          <th>Disponibilità</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+        <tbody>
+        <tr><td>Mouse</td><td>15€</td><td>Disponibile</td><td>Accessori PC</td></tr>
+        <tr><td>Tastiera</td><td>25€</td><td>Disponibile</td><td>Accessori PC</td></tr>
+        <tr><td>Monitor</td><td>150€</td><td>Esaurito</td><td>Display</td></tr>
+        <tr><td>Notebook<td></td><td>Disponibile</td><td>Portatile</td></tr>
+      </tbody>
+    </table>
+</tfoot>
+    <p>Sito: <a href="http://www.example.com">www.example.com</a></p> Catalogo 2025</a></p> 
+    <p>© Azienda Demo</p>
+  </section>
+
+  <section id="form">
+    <h3>Iscrizione Corso</h3>
+    <form>
+      <fieldset>
+        <legend>Dati Anagrafici</legend>
+        <label>Nome: <input type="text" name="nome" required></label>
+        <label>Cognome: <input type="text" name="cognome" required></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contatti</legend>
+        <label>Email: <input type="email" name="email" required></label>
+        <label>Telefono: <input type="tel" name="telefono"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Residenza</legend>
+        <label>Stato:
+          <select name="stato">
+            <optgroup label="Europa">
+            <option>Italia</option>
+            <option>Francia</option>
+            <option>Germania</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option>Cina</option>
+                <option>Thailandia</option>
+                <option>Giappone</option>
+            </optgroup>
+
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dati Personali</legend>
+        <label for="mese e anno">Mese e anno</label>
+        <input type="month" name="mese e anno" id="mese e anno">
+        <label for="colore-preferito">Colore preferito:</label>
+        <input type="color" name="colore-preferito" id="colore-preferito">
+        <label for="numero-preferito">Età:</label>
+        <input type="number" name="età" id="età" min="18" max="99">
+      </fieldset>
+
+      <fieldset>
+        <legend>Dati di Gradimento</legend>
+        <label>Voto:
+                <input type="range" name="voto" min="1" max="10">
+            </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferenze Sportive</legend>
+        <label>Sport preferito: 
+            <input list="sport" name="sportpref">
+                <datalist id="sport">
+                    <option value="Calcio">
+                    <option value="Tennis">
+                    <option value="Basket">
+                    <option value="Nuoto">
+                </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>Commenti</legend>
+        <textarea name="commenti" rows="4" cols="50"></textarea>
+      </fieldset>
+
+      <button type="submit">Invia</button>
+    </form>
+  </section>
+
+  <section id="articolo">
+    <h3>Articolo HTML5</h3>
+    <h4>Social Media e Web Marketing Manager</h4>
+    <p>La ricerca si occupa della gestione dei contenuti web e social utilizzando tecnologie HTML5.</p>
+    <p><a href="#">► Approfondimenti</a></p>
+    <p>Autore: Studente</p>
+  </section>
+
+</body>
+</html>
